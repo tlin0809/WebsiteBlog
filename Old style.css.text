@@ -1,0 +1,75 @@
+/* style.css */
+body {
+  font-family: "Noto Sans", "Microsoft YaHei", Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  background-color: #f2f9f1;
+}
+header .home{
+  display: flex;
+  align-items: center;  /* vertically centers logo and title */
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+header :hover{
+  color: #87A96B;
+}
+
+header .logo {
+  height: 60px;        /* adjust size of logo */
+  margin-right: 10px;  /* space between logo and text */
+}
+
+header h1 {
+  font-size: 1.7em;    /* control title size */
+  margin: 0;
+}
+
+/* Intro texts */
+p {
+  font-size: 1.2em;
+  margin: 12px 1;
+}
+h1, h2, h3{
+  color: #2c3e50;
+}
+
+
+/* spacing below intro texts */
+nav{
+  margin-top: 50px
+}
+
+nav table {
+  width: 100%;
+  border-collapse:collapse;
+  margin: 0 auto;
+}
+
+nav th{
+  padding: 2px;
+  font-size:1.2em;
+}
+
+nav th a {
+  text-decoration: none; /* remove underline */
+  color: #5585b5;
+  transition: color 0.15s;
+}
+
+nav th a:hover {
+  color: #3498db;        /* highlight color on hover */
+  text-decoration: underline;
+}
+
+.nav-img {
+  width: 500px;
+  height: 300px; /* between 250 to 400 looks good, adjust */
+  object-fit: cover; /* crops to fit while keeping aspect ratio */
+  margin-top: 10px;
+  border-radius: 14px;  /* rounded corners */
+  
+}
+
