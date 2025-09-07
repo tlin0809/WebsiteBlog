@@ -65,8 +65,8 @@ nav th a:hover {
 }
 
 .nav-img {
-  width: 500px;
-  height: 300px; /* between 250 to 400 is good */
+  width: 400px;
+  height: 250px; /* between 250 to 400 is good */
   object-fit: cover; /* crops to fit while keeping aspect ratio */
   margin-top: 10px;
   border-radius: 14px;  /* rounded corners */
