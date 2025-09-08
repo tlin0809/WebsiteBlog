@@ -37,6 +37,16 @@ h1, h2, h3{
 }
 
 
+h2 {
+  margin-top: 70px;
+  padding: 5px;
+  font-weight: normal; /* unbold text */
+}
+
+h3 {
+  padding-left: 5px;
+}
+
 /* spacing below intro texts */
 nav{
   margin-top: 50px
@@ -74,6 +84,9 @@ nav th a:hover {
 
 nav a {
   text-decoration: none; /* remove underline */
+  display: block; /* each link on its own line*/
+  margin: 25px 0; /* line spacing */
+  padding-left: 15px; /* distance to left edge */
   color: #5585b5;
   transition: color 0.15s;
 }
@@ -81,5 +94,114 @@ nav a {
 nav a:hover {
   color: #3498db;        /* highlight color on hover */
   text-decoration: underline;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #3498db;   /* match nav link color */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: #5585b5;   /* darker hover */
+  transform: translateY(-3px); /* subtle lift */
+}
+
+/* Flex container for reflections.html main content */
+.content {
+  display: flex;
+  justify-content: space-between; /* space between left & right */
+  align-items: flex-start;        /* align top edges */
+  margin-top: 20px;
+}
+
+/* Left side (nav, text) */
+.content .left {
+  flex: 1;               /* takes remaining space */
+  padding-right: 20px;   /* spacing before image */
+}
+
+/* Right side (box image) */
+.content .right {
+  flex: 1;               /* let it take up good portion */
+  display: flex;
+  justify-content: flex-end; /* stick to the right edge */
+}
+
+.mailbox {
+  max-width: 80%;   /* adjust size */
+  height: auto;
+}
+/* Flex container for reflections.html main content */
+.content {
+  display: flex;
+  justify-content: space-between; /* space between left & right */
+  align-items: flex-start;        /* align top edges */
+  margin-top: 20px;
+}
+
+/* Left side (nav, text) */
+.content .left {
+  flex: 1;               /* takes remaining space */
+  padding-right: 10px;   /* spacing before image */
+}
+
+/* Right side (box image) */
+.content .right {
+  flex: 1;               /* let it take up good portion */
+  display: flex;
+  justify-content: flex-end; /* stick to the right edge */
+}
+
+.mailbox {
+  max-width: 75%;   /* adjust size */
+  height: auto;
+}
+
+.honey {
+  max-width: 75%;   /* adjust size */
+  height: auto;
+}
+
+/* for formating the reflection entries, new column every 10 */
+/* Multi-column list: fill 10 rows, then start a new column */
+nav.entries {
+  display: grid;
+  grid-auto-flow: column;           /* fill down first, then new column */
+  grid-template-rows: repeat(15, auto); /* <= exactly 10 per column */
+  grid-auto-columns: max-content;   /* column width fits content */
+  column-gap: 24px;                 /* space between columns */
+  row-gap: 10px;                    /* space between rows (entries) */
+  padding-left: 15px;               /* indent from left edge */
+}
+
+/* Entry link look (keeps your hover rules) */
+nav.entries a {
+  display: block;
+  margin: 0;                        /* spacing handled by row-gap */
+  text-decoration: none;
+  color: #5585b5;
+  transition: color 0.15s;
+}
+nav.entries a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+/* Mobile: collapse to a single column list */
+@media (max-width: 700px) {
+  nav.entries {
+    display: block;
+  }
+  nav.entries a {
+    margin: 10px 0;
+  }
 }
 

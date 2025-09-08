@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 	
-	<title>Good Views</title>
+	<title>2025-09-07</title>
 	</style>
 	<link rel = "stylesheet" href = "style.css"> <!-- external CSS --> 
 </head>
@@ -15,6 +15,16 @@
 		<h1>TRAYE的趣闻闲谈</h1> 
 		</a>
 	</header>
-	<h3 style="margin-bottom: 40px;">Good Views Have Everything 风景蕴藏着一切</h3>
+	<h3 style="margin-bottom: 40px;">2025-09-07 尝试一个新习惯</h3>
+
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+
+	<p></p>
+	<p></p>
+	<p></p>
 </body>
 </html>
