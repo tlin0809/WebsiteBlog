@@ -82,6 +82,12 @@ nav th a:hover {
   border-radius: 14px;  /* rounded corners */
 }
 
+.general-img {
+  max-width: 100%; /* Image will not exceed 100% of its container's width */
+  height: auto;    /* Height adjusts automatically to maintain aspect ratio */
+  margin-top: 25px;
+}
+
 nav a {
   text-decoration: none; /* remove underline */
   display: block; /* each link on its own line*/
