@@ -202,12 +202,27 @@ nav.entries a:hover {
 }
 
 /* Mobile: collapse to a single column list */
-@media (max-width: 700px) {
+/* try #1 */
+/* @media (max-width: 700px) {
   nav.entries {
     display: block;
   }
   nav.entries a {
     margin: 10px 0;
+  }
+} */
+/* try #2  */
+@media (max-width: 700px) {
+  nav table, nav tr, nav th {
+    display: block;       /* stack like blocks */
+    width: 100%;          /* take full width */
+    text-align: center;   /* center text and image */
+    margin-bottom: 20px;  /* spacing between sections */
+  }
+
+  .nav-img {
+    width: 90%;  /* scale images down for mobile */
+    height: auto;
   }
 }
 
