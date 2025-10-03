@@ -201,7 +201,6 @@ nav.entries a:hover {
   text-decoration: underline;
 }
 
-/* Mobile: collapse to a single column list */
 /* try #1 */
 @media (max-width: 700px) {
   nav.entries {
@@ -211,6 +210,7 @@ nav.entries a:hover {
     margin: 10px 0;
   }
 }
+/* Mobile: collapse to a single column list */
 /* try #2  */
 /* @media (max-width: 700px) {
   nav table, nav tr, nav th {
@@ -241,12 +241,12 @@ nav.entries a:hover {
     display: block;
   }
 }
-/* only show on touch screen */
+only show on touch screen */
 /* @media (hover: none) and (pointer: coarse) {
   .swipe-hint {
     display: block;
   }
-} */
+}
 
 /* Format photo gallery automatically  */
 .gallery {
