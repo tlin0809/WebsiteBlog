@@ -203,22 +203,27 @@ nav.entries a:hover {
 
 /* Mobile: collapse to a single column list */
 /* try #1 */
-/* @media (max-width: 700px) {
+@media (max-width: 700px) {
   nav.entries {
     display: block;
   }
   nav.entries a {
     margin: 10px 0;
   }
-} */
+}
 /* try #2  */
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   nav table, nav tr, nav th {
     display: block;       /* stack like blocks */
     width: 100%;          /* take full width */
     text-align: center;   /* center text and image */
     margin-bottom: 20px;  /* spacing between sections */
   }
+  .nav-img {
+    width: 90%;  /* scale images down for mobile */
+    height: auto;
+  }
+} */
 
   /* mobile users get swipe hints below 4 categories */
   .swipe-hint {
@@ -226,29 +231,22 @@ nav.entries a:hover {
   font-size: 0.9em;
   color: #888;
   margin-top: 10px;
-  margin-left: 50px;
+  margin-left: 20px;
   display: none;   /* hidden by default */
 }
 
 /* Only show on mobile (screen ≤ 700px wide) */
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .swipe-hint {
+    display: block;
+  }
+}
+/* only show on touch screen */
+/* @media (hover: none) and (pointer: coarse) {
   .swipe-hint {
     display: block;
   }
 } */
-@media (hover: none) and (pointer: coarse) {
-  .swipe-hint {
-    display: block;
-  }
-}
-
-
-
-  .nav-img {
-    width: 90%;  /* scale images down for mobile */
-    height: auto;
-  }
-}
 
 /* Format photo gallery automatically  */
 .gallery {
