@@ -260,4 +260,14 @@ nav.entries a:hover {
   color: #555;
 }
 
+.gallery figcaption a {
+  text-decoration: none;     /* 去掉下划线 */
+  color: #5585b5;            /* 与导航链接同色 */
+  transition: color 0.15s;
+}
+
+.gallery figcaption a:hover {
+  color: #3498db;            /* 鼠标悬停时变亮 */
+  text-decoration: underline;
+}
 
